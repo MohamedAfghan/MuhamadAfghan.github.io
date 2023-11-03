@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'poppins';
+}
+
+
+a {
+    /* padding-right: 20px; */
+    text-decoration: none;
+    /* opacity: 0.8; */
+    position: relative;
+}
+
+/* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER *//* BAGIAN HEADER */
+.header {
+    width:100%;
+    background-position-y: 20px;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.head {
+    position: fixed;
+    z-index: 10;
+    width: 98.95%;
+    top: 0; 
+}
+
+
+.header-link {
+    color: #00316cb5;
+    margin-left: -110px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-link:hover {
+    color: #0476e0;
+    opacity: 1.0;
+    transition: all 0.5s;
+}
+
+.header-link::after {
+    content: "";
+    width: 0%;
+    position: absolute;
+    background-color: #02165d;
+    border-radius: 70px;
+    height: 2.2px;
+    top: 30px;
+    transition: .5s;
+}
+.header-link:hover::after {
+    content: "";
+    width: 40%;
+    position: absolute;
+    background-color: #02165d;
+    border-radius: 70px;
+    height: 2.2px;
+    top: 30px;
+}
+
+/* .header-link {
+    line-height: 110px;
+    padding-left: 70px;
+    color:#7b7e80;
+    transition: color 0.5s;
+} */
+
+.header-logo {
+    /* position: absolute; */
+    width: 90px;
+    margin-left: -100px;
+    /* padding: 15px;
+    padding-left: 70px */
+}
+
+/* .header-title {
+    position:absolute;
+    padding-left: 810px;
+    padding-top: 10px;
+    color:rgb(2, 29, 67);
+    opacity: 0.8;
+} */
+
+.header-title {
+    color: #02165d;
+    margin-left: -180px;
+    font-weight: normal;
+}
+
+.header-right{
+    display: flex;
+    margin-right: -120px;
+}
+
+.contact-us {
+    margin-right: -40px;
+}
+
+.header-list {
+    background-color: #00284e;
+    height: 47px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.list{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-list a{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    line-height: 40px;
+    font-size: 100%; 
+    transition: opacity 0.5s, color 0.5s;
+}
+
+.header-list a:hover {
+    transition: all 0.5s;
+    color:white;
+    opacity: 1.0;
+    bottom: 1px;
+}
+
+.header-list a::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 2px;
+    border: 0px solid rgb(255, 232, 24);
+    transition: all 0.2s;
+}
+.header-list a:hover::after {
+    content: "";
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    bottom: 3px;
+    border: 1px solid rgb(255, 232, 24);
+}
+
+.submit {
+    margin:37px 40px 37px 0px;
+    transition: all 0.7ms;  
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    color: #ffffff;
+    background-color:#031a6e;
+    border-style: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search {
+    background-color: #00284e00;
+    float: right;
+    border-radius: 5px;
+    margin: 37px 20px;
+    width: 140px;
+    text-align: start;
+    padding: 14px;
+    height: 40px;
+    font-size: 17px;
+    border: 2px solid rgb(101, 98, 98);
+}
+
+.search:focus {
+    outline: 3px solid rgba(178, 205, 2, 0.619);
+}
+
+/* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT *//* BAGIAN WRAP-CONTENT */
+.background-boxies {
+    background-image: url(https://smkwikrama.sch.id/storage/1684814427-slider$slider.png);
+    height: 500px;
+    background-size: cover; 
+    position: relative;
+}
+.gradient-boxies {
+    background-image: linear-gradient(yellow, blue);
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    background-size: cover;
+    height: 500px;
+    width: 98.95%;
+}
+.box1{
+    position: absolute;
+    width:115px;
+    height: 20px;
+    margin: 260px 30px;
+    padding: 7px 20px;
+    display: inline-block;
+    color: white;
+    background-color: #00284e;
+    z-index: 7;
+    transition: all 10s;
+}
+
+.box2{
+    position: absolute;
+    font-size: 17px;
+    width: 330px;
+    height: 56px;
+    margin: 295px 30px;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #00284e;
+    background-color: #ffffff;
+    z-index: 7;
+    transition: all 9s; 
+}
+
+.box3{
+    position: absolute;
+    font-size: 17px;
+    width: 50px;
+    height: 25px;
+    margin: 361px 30px;
+    padding: 5px 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: #ffea00;
+    z-index: 7;
+    transition: all 8s;
+}
+
+/* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID *//* BAGIAN DAFTAR-MURID */
+.lesson a, p {
+    margin: 30px 0px 0px 10px;
+    color: #484949;
+}
+
+.daftar-murid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+    font-weight: 400;
+}
+
+.visitors h4, .total h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #E3CE0F;
+}
+
+.mid-line {
+    background: #C6C6C6;
+    padding-bottom: 10px;
+    padding-top: -10%;
+    height: 70px;
+    width: 2.6px;
+}
+
+.visitors, .mid-line, .total {
+    float: left;
+    margin: 0px 20px;
+}
+
+#visitor-today {
+    padding-left: 18px;
+    margin-top: -15px;
+    font-weight: normal;
+    color: #001E42;
+}
+
+#visitor-total {
+    padding-left: 3px;
+    margin-top: -15px;
+    font-weight: normal;
+    color: #001E42;
+}
+
+.btn-daftar-murid {
+    cursor: pointer;
+    background-color: #001E42;
+    opacity: 1;
+    border: none;
+    color: white;
+    height: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin:30px;
+}
+
+/* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL *//* BAGIAN ARTIKEL */
+.title-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 50px 0px 20px 65px;
+}
+
+.artikel-title {
+    font-size: 28px;
+    font-weight: normal;
+    color: #001E42;
+}
+
+.artikel-line-berita {
+    margin-right: 50px;
+    height: 2px;
+    width: 82%;
+    background: #C6C6C6;
+}
+
+.artikel-berita {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.berita {
+    margin: 0px 5px;
+    width: 100%;
+    height: 450px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px 0px rgb(202, 196, 196);
+}
+
+.berita img {
+    border-bottom: 1px solid rgb(195, 192, 192);
+    padding-bottom: 10px;
+}
+
+.berita h4 {
+    color:#031a6e;
+    font-weight: normal;
+    margin: 0px 10px;
+}
+
+.berita p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.berita input {
+    margin: 20px 10px;
+    width: 70px; 
+    height: 35px;
+    color: white;
+    border: 0px;
+    font-family: 'poppins';
+    background-color: #031a6e;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.berita input:hover {
+    box-shadow: 0px 0px 10px 0px #031a6e;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.berita input:active {
+    background-color: #0329b2;
+}
+
+.btn-lainnya {
+    margin: 50px 44%;
+}
+
+.lainnya {
+    border: none;
+    font-family: 'poppins';
+    background-color: transparent;
+}
+
+.lainnya {
+    transition: all 0.5s;
+}
+
+.lainnya:hover {
+    box-shadow: 0px 0px 10px 0px #031a6e;
+    color: rgb(255, 255, 255);
+    background-color: #031a6e;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.artikel-line-virtual {
+    margin-right: 50px;
+    height: 2px;
+    width: 79%;
+    background: #C6C6C6;
+}
+
+.content-virtual .background {
+    position: absolute;
+    background-color: #001E42;
+    height: 250px;
+    width: 98.99%;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.virtual-contents {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box; 
+}
+
+.child-content {
+    margin: 105px 0px;
+}
+
+.virtual-contents .h4 {
+    margin: 0px 125px;
+}
+
+.virtual-contents .p {
+    margin: 0px 37%;
+}
+
+.virtual-contents p, .virtual-contents a {
+    z-index: 2;
+}
+
+.link-content p, .link-content h4{
+    display: inline;
+}
+
+.link-content h4 {
+    margin: 0px 114px;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: normal;
+}
+.link-content p {
+    margin:  30%;
+    text-align: center;
+    color: #E3CE0F;
+}
+.content1 {
+    background-image: url(https://smkwikrama.sch.id/assets2/commerce.png);
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+}
+.content2 {
+    background-image: url(https://smkwikrama.sch.id/assets2/learning.png);
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+}
+.content3 {
+    background-image: url(https://smkwikrama.sch.id/assets2/library.png);
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+}
+.content4 {
+    background-image: url(https://smkwikrama.sch.id/assets2/lapangaan.png);
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+}
+
+.artikel-line-gallery {
+    margin-right: 70px;
+    height: 2px;
+    width: 86%;
+    background: #C6C6C6;
+}
+
+.gallery {
+    justify-content: space-between;
+    display: flex;
+    margin: 0px 70px;
+}
+
+.gallery p {
+    background-color:#212f64;
+    margin-left: 0;
+    width: 100%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+.gallery .bawah {
+    margin-top: 20px;
+}
+.gallery .atas {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.gallery-content1, .gallery-content2, .gallery-content3, .gallery-content4 {
+    width: 24%;
+    box-sizing: border-box;
+}
+
+.content-bg1 {
+    background-image: url(https://smkwikrama.sch.id/assets2/grid1.png);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: -40px;
+}
+.content-bg2 {
+    background-image: url(https://smkwikrama.sch.id/assets2/grid2.png);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: -50px;
+}
+.content-bg3 {
+    background-image: url(https://smkwikrama.sch.id/assets2/grid3.png);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: -90px ;
+}
+.content-bg4 {
+    background-image: url(https://smkwikrama.sch.id/assets2/grid4.png) ;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: -90px;
+}
+
+.artikel-line-informasi {
+    margin-right: 70px;
+    height: 2px;
+    width: 80%;
+    background: #C6C6C6;
+}
+
+.informasi .head-informasi {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    margin: 0px 50px;
+    padding: 0;
+}
+
+.informasi .head-informasi p {
+    background-color: #001E42;
+    font-size: 16px;
+    border-top: 0px solid #001E42;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    padding: 12px 30px;
+    margin: 0px -1px;
+    color: white;
+    cursor: pointer;
+}
+
+.informasi .head-informasi p {
+    transition: all 0.6s;
+}
+
+.informasi .head-informasi p:hover {
+    background-color: #053766;
+    transition: all 0.6s;
+}
+
+.informasi .head-informasi p:active {
+    background-color: #ffe600;
+}
+
+.line-top-informasi {
+    background-color: #001E42;
+    height: 15px;
+    width: 92.3%;
+    margin-left: 49px;
+}
+
+.isi-content-informasi {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    width: 40%;
+    height: 400px;
+    margin-left: 49px;
+}
+
+.content-right {
+    margin: 0;
+    background-color:#41413a;
+    width: 52.3%
+}
+
+.content-right h2, .content-right p{
+    color: white;
+    font-weight: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-right h2 {
+    margin: 60px 0px 50px 40px ;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-right p {
+    margin: 0px 0px 20px 40px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.content-right input {
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 40px;
+    width: 180px;
+    border-radius: 7px;
+    border: none;
+    background-color: #0137fd;
+    font-family: 'poppins';
+    color: #ffffffe0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.content-right input:hover {
+    background-color: #0930be;
+    transition: all 0.5s;
+} 
+
+/* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan */
+.artikel-line-pesan {
+    margin-right: 65px;
+    height: 2px;
+    width: 88%;
+    background: #C6C6C6;
+}
+
+.massage-parent {
+    justify-content: space-between;
+    margin:40px 0px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    margin-bottom: 80px;
+    width: 90%;
+    height: 282px;
+}
+
+.massage-parent::-webkit-scrollbar-thumb{
+    background:#001e4200;
+}
+
+.massage-parent::-webkit-scrollbar-thumb:hover{
+    background:#61626313;
+    border-radius: 10px;
+}
+
+.massage-parent::-webkit-scrollbar {
+    height: 20px;
+}
+
+.child {
+    flex: 0 0 20%;
+    margin: 0 40px;
+    border: 1px solid rgb(110, 110, 112);
+    flex-direction: column;
+    justify-content: space-between;
+    /* border-radius: 9px; */
+}
+
+.c1 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.c1::-webkit-scrollbar-thumb{
+    background:#001e4200;
+    border-radius: 10px 10px 0px 0px;
+}
+.c1::-webkit-scrollbar-thumb:hover{
+    background-color: #61626313; 
+}
+.c1::-webkit-scrollbar {
+    width: 10px;
+}
+.child h4 {
+    display: block;
+    background-color: #001E42;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /* border-radius: 0px 0px 9px 9px ; */
+}
+
+.anak1 {
+    text-align: center;
+}
+
+.anak2 {
+    margin-top: -10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.anak3 {
+    padding: 60px 5px;
+}
+
+.anak4 {
+    padding:0px 10px 0px 3px;
+    text-align: center;
+}
+.c1 h4 {
+    height: 35px;
+    margin-bottom: 6px;
+    padding-top: 15px;
+}
+.c2 h4 {
+    margin-top: 21px;
+}
+.c3 h4 {
+    height: 35px;
+    padding-top: 25px;
+    margin-top: 9px;
+}
+.c4 h4 {
+    margin-top: 34px;
+    height: 50px;
+}
+.c5 h4 {
+    margin-top: 60px;
+}
+/* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan *//* pesan */
+
+/* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER *//* BAGIAN FOOTER */
+.footer {
+    background-color: #00284e;
+    height: 530px;
+    color: rgb(255, 255, 255);
+}
+
+.Logo-Wikrama {
+    float:left;
+}
+
+.footer-head {
+    float: left;
+}
+.footer-title {
+    padding-left: 100px;
+    padding-top: 30px;
+    float: left;
+}
+
+.footer-title h6 {
+    line-height: 45px;
+    font-size: 14px;
+    font:normal;
+}
+
+.footer-title a {
+    color:white;
+    text-decoration: none;
+    opacity: 1.0;
+}
+
+.footer-title1 {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom:20px;
+    width:280px;
+}
+
+.footer-mapsWK {
+    padding-top: 70px;
+    float: left;
+}
+
+.footer-list{
+    float: left;
+    font-size: 17px;
+    margin-left: 30px;
+    line-height: 34px;
+}
+.footer-list li {
+    cursor: pointer;
+}
+.footer-list-title {
+    padding-top: 10px;
+    margin-bottom: -10px;
+    font-size:20px;
+    margin-left: 18px;
+}
+
+form {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-message {
+    padding-top: 45px;
+    padding-left: 1150px;
+    font-size: 20px;
+    
+}
+
+.form-message h3 {
+    margin-left: 38px;
+}
+
+.form-message input {
+    width: 240px;
+    height: 30px;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 5px 0px 5px 10px;
+    font-size: 17px;
+}
+
+.form-message textarea {
+    font-family: 'poppins';
+    width: 240px;
+    height: 90px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    outline: none;
+    padding: 5px 0px 5px 10px;
+    resize: none;
+    font-size: 17px;
+}
+
+.form-message input:focus,textarea:focus {
+    outline: 3.7px solid rgba(152, 152, 2, 0.788);
+}
+
+.from-submit {
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+    width:90px;
+    height: 33px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    background-color: #ffea00ec;
+    font-family: 'poppins';
+}
+
+.from-submit {
+    transition: all 0.5s;
+}
+
+.from-submit:hover {
+    background-color: #c4b107;  
+}
