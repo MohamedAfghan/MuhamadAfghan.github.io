@@ -124,21 +124,29 @@
         background-color: white;
         box-shadow: 0px 0px 0px 0px #d29b02;
         border-radius: 10px;
-        padding: 5px 30px;
         position: absolute;
-        transform: translateX(-75%) translateY(-130%);
+        width: 50%;
+        transform: translateX(36%);
         text-align: center;
         transition: .5s;
     }
-    header .forMobile:hover .navHoverMobile {
+    header .forMobile:hover  .navHoverMobile {
         display: block;
         background-color: white;
         box-shadow: 0px 0px 10px 1px #d29b02;
         border-radius: 10px;
-        padding: 5px 30px;
+        padding: 20px 30px;
         position: absolute;
-        transform: translateX(-75%);
+        transform: translate(-76%, -5%);
         text-align: center;
+    }
+
+    header .navHoverMobile h2 {
+        color: #d29b02;
+    }
+
+    header .navHoverMobile hr {
+        margin: 20px 0;
     }
     header .navHoverMobile ul {
         list-style: none;
@@ -148,24 +156,16 @@
         margin: 10px 0;
     }
     header .navHoverMobile ul li {
-        font-size: 13px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-size: 18px;
+        margin: 20px 0;
     }
-    header .navHoverMobile ul li::after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        transition: .5s;
+    header .navHoverMobile ul li:hover {
+        background-color: #d29b02;
+        border-radius: 10px;
+        padding: 7px 0;
+        color: white;
     }
     
-    header .navHoverMobile li:hover::after {
-        content: '';
-        width: 70%;
-        background-color: #bfad26;
-        border-radius: 10px;
-    }
     header nav {
         display: none;
     }

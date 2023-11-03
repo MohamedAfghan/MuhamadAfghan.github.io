@@ -1,7 +1,7 @@
-let inputNama = prompt ('Masukkan Nama Anda')
-let nama = ('Selamat datang ' + inputNama + ', Klik tombol OK atau Enter pada keyboard untuk melanjutkan')
+// let inputNama = prompt ('Masukkan Nama Anda')
+// let nama = ('Selamat datang ' + inputNama + ', Klik tombol OK atau Enter pada keyboard untuk melanjutkan')
 
-alert(nama)
+// alert(nama)
 
 document.addEventListener('scroll', () => {
     const header = document.querySelector ('header');
